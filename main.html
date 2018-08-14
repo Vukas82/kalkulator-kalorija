@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <title>Projekat</title>
+
+
+</head>
+
+<body>
+
+    
+
+    <div id="naslov">
+
+        <h3>Izracunajte broj kalorija koji vam je potreban u toku dana</h3>
+        
+    <div>
+        <input type="radio" onclick="myFunction1()" id="zene" name="pol" />
+        <label for="zene">Zene</label>
+    </div>
+    <div>
+        <input type="radio" onclick="myFunction2()" id="muskarci" name="pol" />
+        <label for="muskarci">Muskarci</label>
+    </div>
+    <div>
+        <input type="radio" onclick="myFunction3()" id="devojcice" name="pol" />
+        <label for="devojcice">Devojcice</label>
+    </div>
+    <div>
+        <input type="radio" onclick="myFunction4()" id="decaci" name="pol" />
+        <label for="decaci">Decaci</label>
+    </div>
+        
+
+
+    
+<label> Nivo fizicke aktivnosti:
+    <select id="izborAktivnosti" onchange="onSelected()" name="izborAktivnosti">
+        <option value="">Select One …</option>
+        <option value="1" id="sedenje">Sedenje</option>
+        <option value="2" id="uAktivan">Umereno aktivan</option>
+        <option value="3" id="aktivan">Aktivan</option>
+        <option value="4" id="vAktivan">Veoma aktivan</option>
+    </select> 
+</label>
+    
+    
+
+    </div>
+
+    <div id="calc">
+
+
+        Vasa visina(m):<br>
+        <input type="number" name="visina" id="visina">
+        <br> Vasa tezina(kg): <br>
+        <input type="number" name="tezina" id="tezina">
+        <br> Vase godine: <br>
+        <input type="number" name="godine" id="godine">
+        <br>
+
+
+        <br><br>
+        <input type="submit" onclick="myFunction()" value="Izracunaj" name="izracunaj" id="calculate"></input>
+        <!--<input type="reset" value="Ponisti" name="ponisti" id="reset">--><br><br> Potencijalna potrosnja kalorija(kCal):
+        <input type="text" name="izracunataVrednost" id="rezultat" value=""></input>
+
+
+    </div>
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
